@@ -1,0 +1,111 @@
+.actions__footer-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 0.5rem;
+}
+.actions-btn {
+	overflow: visible;
+	z-index: 1;
+	transition: var(--time);
+	rect,
+	path {
+		transition: var(--time);
+	}
+
+	@include media(md) {
+		// width: 7rem;
+	}
+}
+.actions-like {
+	rect {
+		stroke: #60d681;
+		fill: transparent;
+	}
+	path {
+		fill: #60d681;
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			rect {
+				fill: #60d681;
+			}
+			path {
+				fill: #fff;
+			}
+		}
+	}
+
+	&.active {
+		rect {
+			fill: #60d681;
+		}
+		path {
+			fill: #fff;
+		}
+	}
+}
+.actions-dislike {
+	rect {
+		stroke: #ff628a;
+		fill: transparent;
+	}
+	path {
+		fill: #ff4b81;
+	}
+
+	@media (hover: hover) {
+		&:hover {
+			rect {
+				fill: #ff628a;
+			}
+			path {
+				fill: #fff;
+			}
+		}
+	}
+
+	&.active {
+		rect {
+			fill: #ff628a;
+		}
+		path {
+			fill: #fff;
+		}
+	}
+}
+.actions__likes {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+	margin-left: -12px;
+}
+.actions__likes span {
+	font-family: var(--second-family);
+	font-weight: 700;
+	font-size: 20px;
+	text-align: center;
+	background: linear-gradient(91deg, var(--pink) 0%, var(--purple) 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.actions__comments {
+	font-size: 0.875rem;
+	text-align: center;
+	color: #999;
+
+	a {
+		display: flex;
+		flex-wrap: nowrap;
+		text-wrap: nowrap;
+		margin-bottom: 0;
+		position: relative;
+
+		svg {
+			flex-shrink: 0;
+		}
+	}
+}

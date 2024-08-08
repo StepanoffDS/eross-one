@@ -1,0 +1,31 @@
+:root {
+	--font-family: 'Roboto', sans-serif;
+	--second-family: 'Inter', sans-serif;
+	--third-family: 'Raleway', sans-serif;
+
+	--page-bg: #f7f8fd;
+	--page-bg2: #fff;
+	--text-color: #111;
+	--accent: #ac182c;
+	--pink: #eb74f2;
+	--purple: #7076eb;
+
+	--mobile-size: 400px;
+
+	--hover-opacity: 0.7;
+	--time: 0.3s;
+}
+
+.dark {
+	--page-bg: #252526;
+	--text-color: #fff;
+}
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+);

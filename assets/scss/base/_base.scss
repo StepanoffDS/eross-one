@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+
+html {
+	scroll-behavior: smooth;
+	background-color: rgb(39, 39, 39);
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--text-color);
+	font-family: var(--font-family);
+}
+
+img {
+	display: block;
+}
+
+a {
+	color: inherit;
+}
+
+.main-personal {
+	background: #fff;
+}
+
+.extra,
+.map {
+	background-color: var(--page-bg);
+	padding-top: 1.75rem;
+}
+
+.lg-backdrop.in {
+	opacity: 0.75;
+}
+
+.lg-next,
+.lg-prev {
+	background: rgba($color: #000000, $alpha: 0);
+}

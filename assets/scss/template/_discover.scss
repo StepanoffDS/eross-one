@@ -1,0 +1,73 @@
+.discover {
+	position: relative;
+	margin: auto;
+	@include media(lg) {
+		max-width: 960px;
+	}
+	@include media(xl) {
+		max-width: 1140px;
+	}
+	@include media(xxl) {
+		max-width: 1320px;
+	}
+}
+
+.discover__title {
+	margin-top: 0.75rem;
+	max-width: 30rem;
+	text-align: center;
+	margin: 0 auto;
+
+	@include media(sm) {
+		margin-top: 1.25rem;
+	}
+
+	@include media(lg) {
+		margin-top: 1.25rem;
+	}
+}
+
+.discover__tags {
+	margin-top: 0.875rem;
+
+	@include media(lg) {
+		ul {
+			justify-content: center;
+		}
+	}
+}
+
+.discover__nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-top: 0.75rem;
+
+	@include media(lg) {
+		position: absolute;
+		top: -1rem;
+		right: 0;
+		left: 0;
+	}
+}
+
+.discover__nav-filter-btn,
+.discover__nav-city-btn {
+	display: flex;
+	gap: 0.25rem;
+	align-items: center;
+
+	font-weight: 500;
+	font-size: 1.0625rem;
+
+	@include opacityAnim;
+}
+
+.discover__nav-city-btn {
+	color: var(--purple);
+}
+
+.discover__nav-filter-btn {
+	color: #7e808e;
+}

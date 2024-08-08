@@ -1,0 +1,39 @@
+.modal-filter {
+	.offcanvas-header.modal-header {
+		border-bottom: 1px solid #dee2e6;
+	}
+
+	li {
+		// border: none;
+	}
+
+	li a {
+		display: inline-block;
+		width: 100%;
+		@include opacityAnim;
+	}
+
+	.accordion-button:not(.collapsed) {
+		background: var(--purple);
+		color: #fff;
+	}
+
+	.accordion-button {
+		font-weight: 500;
+		&::after {
+			background-image: url(./../img/icons/arrow-thin-black.svg);
+		}
+
+		&:not(.collapsed)::after {
+			background-image: url(./../img/icons/arrow-thin-white.svg);
+		}
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+	.accordion-body {
+		padding: 0;
+	}
+}

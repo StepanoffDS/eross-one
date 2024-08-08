@@ -1,0 +1,15 @@
+.breadcrumbs-section {
+}
+.container {
+}
+.breadcrumb {
+}
+.breadcrumb-item {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 0.9375rem;
+	color: #9ba1b1;
+}
+.go-back {
+	@include opacityAnim();
+}

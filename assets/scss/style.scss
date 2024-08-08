@@ -1,0 +1,21 @@
+/* Base */
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
+@import './base/fonts';
+@import './base/base';
+@import './base/utils';
+@import './base/containers';
+@import './base/sticky-footer';
+
+@import './template/header';
+@import './template/discover';
+@import './template/products';
+@import './template/breadcrumbs';
+@import './template/hero';
+@import './template/hero-gallery';
+@import './template/actions';
+@import './template/services';
+@import './template/auth';
+@import './template/modal-city';
+@import './template/modal-filter';

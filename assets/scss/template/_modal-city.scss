@@ -1,0 +1,11 @@
+.modal-city {
+	li {
+		border: none;
+	}
+
+	li a {
+		display: inline-block;
+		width: 100%;
+		@include opacityAnim;
+	}
+}
